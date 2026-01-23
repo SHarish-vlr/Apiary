@@ -1,0 +1,467 @@
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIARY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030303;
+            /* Deep dark background */
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+
+        /* Gradient Text Utility */
+        .text-gradient {
+            background: linear-gradient(to bottom right, #ffffff, #a3a3a3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient-sub {
+            background: linear-gradient(to right, #ea580c, #c2410c);
+            /* n8n-ish orange subtle */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Card Hover Glow */
+        .glow-card {
+            transition: all 0.3s ease;
+        }
+
+        .glow-card:hover {
+            box-shadow: 0 0 40px -10px rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Icon Stroke Fix */
+        .iconify {
+            stroke-width: 1.5 !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-geist" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-geist">
+        .font-geist {
+            font-family: 'Geist', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-roboto" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-roboto">
+        .font-roboto {
+            font-family: 'Roboto', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-montserrat" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-montserrat">
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-poppins" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-poppins">
+        .font-poppins {
+            font-family: 'Poppins', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-playfair" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap">
+    <style id="all-fonts-style-font-playfair">
+        .font-playfair {
+            font-family: 'Playfair Display', serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-instrument-serif" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-instrument-serif">
+        .font-instrument-serif {
+            font-family: 'Instrument Serif', serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-merriweather" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap">
+    <style id="all-fonts-style-font-merriweather">
+        .font-merriweather {
+            font-family: 'Merriweather', serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-bricolage" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-bricolage">
+        .font-bricolage {
+            font-family: 'Bricolage Grotesque', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-jakarta" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap">
+    <style id="all-fonts-style-font-jakarta">
+        .font-jakarta {
+            font-family: 'Plus Jakarta Sans', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-manrope" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap">
+    <style id="all-fonts-style-font-manrope">
+        .font-manrope {
+            font-family: 'Manrope', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-space-grotesk" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-space-grotesk">
+        .font-space-grotesk {
+            font-family: 'Space Grotesk', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-work-sans" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap">
+    <style id="all-fonts-style-font-work-sans">
+        .font-work-sans {
+            font-family: 'Work Sans', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-pt-serif" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap">
+    <style id="all-fonts-style-font-pt-serif">
+        .font-pt-serif {
+            font-family: 'PT Serif', serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-geist-mono" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-geist-mono">
+        .font-geist-mono {
+            font-family: 'Geist Mono', monospace !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-space-mono" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap">
+    <style id="all-fonts-style-font-space-mono">
+        .font-space-mono {
+            font-family: 'Space Mono', monospace !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-quicksand" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-quicksand">
+        .font-quicksand {
+            font-family: 'Quicksand', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-nunito" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap">
+    <style id="all-fonts-style-font-nunito">
+        .font-nunito {
+            font-family: 'Nunito', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-newsreader" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap">
+    <style id="all-fonts-style-font-newsreader">
+        .font-newsreader {
+            font-family: 'Newsreader', serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-google-sans-flex" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-google-sans-flex">
+        .font-google-sans-flex {
+            font-family: 'Google Sans Flex', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-oswald" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-oswald">
+        .font-oswald {
+            font-family: 'Oswald', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-dm-sans" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-dm-sans">
+        .font-dm-sans {
+            font-family: 'DM Sans', sans-serif !important;
+        }
+    </style>
+    <link id="all-fonts-link-font-cormorant" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap">
+    <style id="all-fonts-style-font-cormorant">
+        .font-cormorant {
+            font-family: 'Cormorant Garamond', serif !important;
+        }
+    </style>
+</head>
+
+<body>
+    <section
+        class="relative z-10 sm:p-8 animate-scaleIn animation-delay-300 bg-zinc-950/10 w-full max-w-7xl border-white/10 border rounded-3xl mt-24 mb-24 mr-auto ml-auto pt-6 pr-6 pb-6 pl-6 backdrop-blur">
+        <!-- Header -->
+        <div class="flex gap-6 sm:px-0 pr-1 pl-1 items-center animate-fadeInUp">
+            <span class="inline-flex items-center gap-2 text-sm">
+                <span class="text-4xl font-medium text-white">Legal & Regulatory</span>
+            </span>
+            <span aria-hidden="true" role="separator" aria-orientation="vertical" class="w-px h-10 bg-white/10"></span>
+            <!-- <span class="text-sm text-neutral-300">journey &amp; philosophy</span> -->
+        </div>
+        <div class="h-px bg-white/10 mt-4 animate-fadeIn animation-delay-100"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-start relative z-10 mt-6 sm:mt-8">
+            <!-- Left: Profile & Story -->
+            <div class="lg:col-span-6 animate-fadeInLeft animation-delay-200">
+                <!-- Profile Image -->
+                <div class="relative w-full max-w-md mx-auto lg:mx-0 mb-8">
+                    <div class="aspect-square rounded-3xl overflow-hidden bg-neutral-900">
+                        <img src="./legal.png" alt="Legal & Regulatory" class="w-full h-full object-cover">
+                    </div>
+                    <div
+                        class="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-600/20 blur-xl">
+                    </div>
+                </div>
+
+                <!-- Story Text -->
+                <div class="space-y-4 text-neutral-300">
+                    <div class="text-3xl sm:text-4xl font-light text-zinc-100 tracking-tighter mb-8">Navigating
+                        Complexity in a Regulated Business Environment</div>
+                    <p class="text-base leading-relaxed">
+                        In today's rapidly evolving regulatory landscape, organisations face unprecedented compliance
+                        challenges across
+                        jurisdictions. From corporate formation to complex restructuring, from intellectual property
+                        protection to financial
+                        regulatory requirements—businesses require sophisticated legal guidance coupled with
+                        technological innovation to thrive.
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        Apiary Consulting delivers comprehensive legal and regulatory solutions that transform
+                        compliance from a cost centre
+                        into a strategic advantage. Our expert team combines deep legal knowledge with innovative
+                        technology to help clients
+                        navigate complex requirements while establishing robust governance frameworks that support
+                        sustainable growth.
+                    </p>
+                    <div class="text-3xl sm:text-4xl font-light text-zinc-100 tracking-tighter mb-8"
+                        style="margin-top: 50px;">Our Expertise
+                    </div>
+                    <p class="text-base leading-relaxed">
+                        Through our design-led approach, we deliver legal and regulatory solutions that integrate
+                        seamlessly with business
+                        operations, creating efficiencies while providing comprehensive protection in an increasingly
+                        regulated business
+                        environment.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right: Values & Approach -->
+            <div class="lg:col-span-6 animate-fadeInRight animation-delay-300">
+                <h2 class="text-3xl sm:text-4xl font-light text-zinc-100 tracking-tighter mb-8">
+                    Our Legal & Regulatory Expertise
+                </h2>
+
+                <!-- Values Grid -->
+                <div class="space-y-6 stagger-animation">
+                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-lightbulb w-6 h-6 text-blue-400"
+                                    style="stroke-width:1.5">
+                                    <path d="M9 18h6v-3a3 3 0 0 0-6 0v3Z" class=""></path>
+                                    <path d="M15.09 7A6 6 0 1 1 8.91 7" class=""></path>
+                                    <circle cx="12" cy="2" r="1" class=""></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-2">Business Formation & Structuring</h3>
+                                <p class="text-sm text-neutral-400">We provide end-to-end support for establishing
+                                    various business entities, from traditional companies and LLPs to
+                                    specialized structures like NGOs and producer companies. Our services include
+                                    setting up domestic and foreign entities,
+                                    ensuring compliance with incorporation requirements, and establishing governance
+                                    frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-2 w-6 h-6 text-purple-400"
+                                    style="stroke-width:1.5">
+                                    <path d="m18 16 4-4-4-4" class=""></path>
+                                    <path d="m6 8-4 4 4 4" class=""></path>
+                                    <path d="m14.5 4-5 16" class=""></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-2">Corporate Compliance Management</h3>
+                                <p class="text-sm text-neutral-400">Our consultants deliver streamlined compliance
+                                    solutions covering annual filings, foreign investment procedures,
+                                    regulatory reporting, and comprehensive due diligence. We leverage advanced
+                                    technologies to automate routine compliance
+                                    tasks while maintaining rigorous standards.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-heart w-6 h-6 text-emerald-400"
+                                    style="stroke-width:1.5">
+                                    <path
+                                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"
+                                        class=""></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-2">Mergers & Corporate Restructuring</h3>
+                                <p class="text-sm text-neutral-400">We guide clients through complex corporate
+                                    transactions, from drafting shareholders' agreements to managing mergers and
+                                    amalgamations. Our expertise ensures legally sound documentation while supporting
+                                    strategic business objectives.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-users w-6 h-6 text-amber-400"
+                                    style="stroke-width:1.5">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" class=""></path>
+                                    <circle cx="9" cy="7" r="4" class=""></circle>
+                                    <path d="m22 21-2-2" class=""></path>
+                                    <circle cx="20" cy="16" r="2" class=""></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-2">Intellectual Property & Brand Protection
+                                </h3>
+                                <p class="text-sm text-neutral-400">Our specialists help organizations secure their
+                                    intellectual assets through trademark registration and comprehensive IP
+                                    portfolio management, creating sustainable competitive advantage through protected
+                                    innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-2 w-6 h-6 text-purple-400"
+                                    style="stroke-width:1.5">
+                                    <path d="m18 16 4-4-4-4" class=""></path>
+                                    <path d="m6 8-4 4 4 4" class=""></path>
+                                    <path d="m14.5 4-5 16" class=""></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-2">Financial Regulatory Servcies</h3>
+                                <p class="text-sm text-neutral-400">We navigate the complex landscape of financial
+                                    regulations, offering guidance on GST compliance, income tax advisory,
+                                    investor protection fund claims, and securities management to minimize risk while
+                                    optimizing financial outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-heart w-6 h-6 text-emerald-400"
+                                    style="stroke-width:1.5">
+                                    <path
+                                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"
+                                        class=""></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-2">Consumer Protection & Compliance</h3>
+                                <p class="text-sm text-neutral-400">Our advisors help businesses comply with evolving
+                                    consumer protection regulations, establishing frameworks that build
+                                    consumer trust while meeting regulatory requirements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-users w-6 h-6 text-amber-400"
+                                    style="stroke-width:1.5">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" class=""></path>
+                                    <circle cx="9" cy="7" r="4" class=""></circle>
+                                    <path d="m22 21-2-2" class=""></path>
+                                    <circle cx="20" cy="16" r="2" class=""></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-2">Future Services (Coming Soon)</h3>
+                                <p class="text-sm text-neutral-400">We are constantly expanding our capabilities to meet
+                                    emerging client needs. Our upcoming services include accounting
+                                    services, ESOP process management, sweat equity structures, HR consultancy, SME IPO
+                                    services, SEBI registration
+                                    processes, NBFC establishment, arbitration conciliation, and international business
+                                    setup.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

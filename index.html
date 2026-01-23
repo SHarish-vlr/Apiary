@@ -224,244 +224,994 @@
     </style>
 </head>
 
-<body>
-    <section
-        class="relative z-10 sm:p-8 animate-scaleIn animation-delay-300 bg-zinc-950/10 w-full max-w-7xl border-white/10 border rounded-3xl mt-24 mb-24 mr-auto ml-auto pt-6 pr-6 pb-6 pl-6 backdrop-blur">
-        <!-- Header -->
-        <div class="flex gap-6 sm:px-0 pr-1 pl-1 items-center animate-fadeInUp">
-            <span class="inline-flex items-center gap-2 text-sm">
-                <span class="text-4xl font-medium text-white">Legal & Regulatory</span>
-            </span>
-            <span aria-hidden="true" role="separator" aria-orientation="vertical" class="w-px h-10 bg-white/10"></span>
-            <!-- <span class="text-sm text-neutral-300">journey &amp; philosophy</span> -->
+<body class="text-neutral-400 antialiased selection:bg-neutral-800 selection:text-white">
+
+    <!-- Background (component) added by Aura -->
+    <div class="aura-background-component fixed top-0 w-full h-screen -z-10" data-alpha-mask="80"
+        style="mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent)">
+        <div data-us-project="X0ErZR3QhPzMHfKgBbJJ" class="absolute top-0 left-0 -z-10 w-full h-full"></div>
+        <script type="text/javascript">
+            !function () { if (!window.UnicornStudio) { window.UnicornStudio = { isInitialized: !1 }; var i = document.createElement("script"); i.src = "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js", i.onload = function () { window.UnicornStudio.isInitialized || (UnicornStudio.init(), window.UnicornStudio.isInitialized = !0) }, (document.head || document.body).appendChild(i) } }();
+        </script>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-black/50 backdrop-blur-md">
+        <div class="flex h-16 max-w-8xl mr-auto ml-auto pr-6 pl-6 items-center justify-between">
+            <div class="flex items-center gap-2 group cursor-pointer">
+                <img src="./qt=q_95.png" alt="logo" width="150" height="150">
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#work" class="hover:text-white transition-colors" style="">Showcase</a>
+                <a href="#process" class="hover:text-white transition-colors" style="">Process</a>
+                <a href="#stack" class="hover:text-white transition-colors" style="">Stack</a>
+            </div>
+
+
+
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="24" height="24"
+                    viewBox="0 0 24 24" data-icon="lucide:menu" data-width="24" class="iconify iconify--lucide">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M4 5h16M4 12h16M4 19h16"></path>
+                </svg>
+            </button>
         </div>
-        <div class="h-px bg-white/10 mt-4 animate-fadeIn animation-delay-100"></div>
+    </nav>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-start relative z-10 mt-6 sm:mt-8">
-            <!-- Left: Profile & Story -->
-            <div class="lg:col-span-6 animate-fadeInLeft animation-delay-200">
-                <!-- Profile Image -->
-                <div class="relative w-full max-w-md mx-auto lg:mx-0 mb-8">
-                    <div class="aspect-square rounded-3xl overflow-hidden bg-neutral-900">
-                        <img src="./legal.png" alt="Legal & Regulatory" class="w-full h-full object-cover">
-                    </div>
-                    <div
-                        class="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-600/20 blur-xl">
-                    </div>
+    <!-- Hero Section -->
+    <header class="relative min-h-screen w-full flex flex-col items-center justify-center">
+        <!-- Background Glow -->
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-neutral-800/20 blur-[120px] rounded-full pointer-events-none">
+        </div>
+
+        <div class="text-center max-w-4xl z-10 mr-auto ml-auto relative">
+
+
+            <h1 class="animate-fade-up md:text-7xl text-5xl font-medium text-white mb-5 justify-center tracking-tight leading-[1.2]"
+                style="mask-image: linear-gradient(160deg, transparent, black 0%, black 100%, transparent); -webkit-mask-image: linear-gradient(160deg, transparent, black 0%, black 100%, transparent); line-height: 1.2;">
+                Where Strategic Insight <br>
+
+                <style>
+                    @keyframes text-shimmer {
+                        0% {
+                            background-position: 200% center;
+                        }
+
+                        100% {
+                            background-position: -200% center;
+                        }
+                    }
+
+                    @keyframes fadeUp {
+                        from {
+                            opacity: 0;
+                            transform: translateY(20px);
+                        }
+
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+
+                    .animate-fade-up {
+                        animation: fadeUp 0.8s ease-out forwards;
+                        opacity: 0;
+                    }
+
+                    .stagger-1 {
+                        animation-delay: 0.2s;
+                    }
+
+                    .stagger-2 {
+                        animation-delay: 0.4s;
+                    }
+
+                    .cursor::after {
+                        content: '|';
+                        animation: blink-caret 0.75s step-end infinite;
+                        color: #e3446b;
+                    }
+
+                    .cursor-white .cursor::after {
+                        color: #ffffff;
+                    }
+
+                    @keyframes blink-caret {
+
+                        from,
+                        to {
+                            opacity: 0
+                        }
+
+                        50% {
+                            opacity: 1
+                        }
+                    }
+                </style>
+                <span class="inline-block font-medium tracking-tight"
+                    style="background: linear-gradient(to right, #525252 20%, #ffffff 50%, #525252 80%); background-size: 200% auto; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: transparent; animation: text-shimmer 9s linear infinite;">Meets</span>
+                <br>
+                <span class="">Technological Brilliance.
+                    <br>
+                </span>
+            </h1>
+
+            <p
+                class="animate-fade-up stagger-1 leading-relaxed md:text-xl text-lg font-bold text-neutral-400 max-w-2xl mr-auto mb-10 ml-auto">
+                DRIVING SUCCESS IN BANKING, HEALTHCARE, MANUFACTURING, RETAIL AND MORE</p>
+
+            <div
+                class="animate-fade-up stagger-2 flex flex-col md:flex-row gap-4 gap-x-4 gap-y-4 items-center justify-center">
+                <a href="#work"
+                    class="hover:bg-neutral-200 transition-all flex items-center gap-2 md:w-auto justify-center text-sm font-medium text-black bg-white w-full rounded-lg pt-3 pr-8 pb-3 pl-8">INSIGHTS<svg
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14"
+                        viewBox="0 0 24 24" data-icon="lucide:arrow-right" data-width="14"
+                        class="iconify iconify--lucide">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7" class=""></path>
+                    </svg></a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Showcase Grid -->
+    <section id="work" class="py-24 px-6 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <h2 class="text-5xl font-medium text-white tracking-tight mb-4" style="">We have the spread to cater
+                        to your needs</h2>
                 </div>
-
-                <!-- Story Text -->
-                <div class="space-y-4 text-neutral-300">
-                    <div class="text-3xl sm:text-4xl font-light text-zinc-100 tracking-tighter mb-8">Navigating
-                        Complexity in a Regulated Business Environment</div>
-                    <p class="text-base leading-relaxed">
-                        In today's rapidly evolving regulatory landscape, organisations face unprecedented compliance
-                        challenges across
-                        jurisdictions. From corporate formation to complex restructuring, from intellectual property
-                        protection to financial
-                        regulatory requirements—businesses require sophisticated legal guidance coupled with
-                        technological innovation to thrive.
-                    </p>
-                    <p class="text-base leading-relaxed">
-                        Apiary Consulting delivers comprehensive legal and regulatory solutions that transform
-                        compliance from a cost centre
-                        into a strategic advantage. Our expert team combines deep legal knowledge with innovative
-                        technology to help clients
-                        navigate complex requirements while establishing robust governance frameworks that support
-                        sustainable growth.
-                    </p>
-                    <div class="text-3xl sm:text-4xl font-light text-zinc-100 tracking-tighter mb-8"
-                        style="margin-top: 50px;">Our Expertise
-                    </div>
-                    <p class="text-base leading-relaxed">
-                        Through our design-led approach, we deliver legal and regulatory solutions that integrate
-                        seamlessly with business
-                        operations, creating efficiencies while providing comprehensive protection in an increasingly
-                        regulated business
-                        environment.
-                    </p>
+                <div class="flex gap-2">
+                    <!-- <button class="px-4 py-2 rounded-md bg-white/10 text-white text-xs font-medium border border-white/10 hover:bg-white/20 transition" style="">All</button>
+                    <button class="px-4 py-2 rounded-md bg-transparent text-neutral-400 text-xs font-medium border border-transparent hover:text-white transition" style="">Marketing</button>
+                    <button class="px-4 py-2 rounded-md bg-transparent text-neutral-400 text-xs font-medium border border-transparent hover:text-white transition" style="">Sales</button>
+                    <button class="px-4 py-2 rounded-md bg-transparent text-neutral-400 text-xs font-medium border border-transparent hover:text-white transition" style="">Ops</button> -->
                 </div>
             </div>
 
-            <!-- Right: Values & Approach -->
-            <div class="lg:col-span-6 animate-fadeInRight animation-delay-300">
-                <h2 class="text-3xl sm:text-4xl font-light text-zinc-100 tracking-tighter mb-8">
-                    Our Legal & Regulatory Expertise
-                </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-                <!-- Values Grid -->
-                <div class="space-y-6 stagger-animation">
-                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-lightbulb w-6 h-6 text-blue-400"
-                                    style="stroke-width:1.5">
-                                    <path d="M9 18h6v-3a3 3 0 0 0-6 0v3Z" class=""></path>
-                                    <path d="M15.09 7A6 6 0 1 1 8.91 7" class=""></path>
-                                    <circle cx="12" cy="2" r="1" class=""></circle>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-medium text-white mb-2">Business Formation & Structuring</h3>
-                                <p class="text-sm text-neutral-400">We provide end-to-end support for establishing
-                                    various business entities, from traditional companies and LLPs to
-                                    specialized structures like NGOs and producer companies. Our services include
-                                    setting up domestic and foreign entities,
-                                    ensuring compliance with incorporation requirements, and establishing governance
-                                    frameworks.</p>
-                            </div>
-                        </div>
+                <!-- Card 1: Lead Enrichment -->
+                <div
+                    class="group relative transition-all duration-500 overflow-hidden border rounded-2xl max-w-2xl hover:bg-white/10 bg-white/5 border-white/10">
+
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neutral-800 border border-neutral-700 flex items-center justify-center mt-6 ml-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20"
+                            viewBox="0 0 24 24" data-icon="lucide:users" data-width="20"
+                            class="iconify iconify--lucide">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <path
+                                    d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87">
+                                </path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </g>
+                        </svg>
                     </div>
 
-                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-code-2 w-6 h-6 text-purple-400"
-                                    style="stroke-width:1.5">
-                                    <path d="m18 16 4-4-4-4" class=""></path>
-                                    <path d="m6 8-4 4 4 4" class=""></path>
-                                    <path d="m14.5 4-5 16" class=""></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-medium text-white mb-2">Corporate Compliance Management</h3>
-                                <p class="text-sm text-neutral-400">Our consultants deliver streamlined compliance
-                                    solutions covering annual filings, foreign investment procedures,
-                                    regulatory reporting, and comprehensive due diligence. We leverage advanced
-                                    technologies to automate routine compliance
-                                    tasks while maintaining rigorous standards.</p>
-                            </div>
+                    <!-- Content -->
+                    <div class="pt-6 pr-6 pb-6 pl-6">
+                        <div class="flex mb-4 items-center justify-between">
+                            <div class="flex items-baseline"><span
+                                    class="count-up text-5xl font-semibold tracking-tight font-geist-mono"
+                                    style="color:#e3446b" data-target="30">0</span><span
+                                    class="text-5xl font-semibold tracking-tight font-geist-mono"
+                                    style="color:#e3446b">+</span></div>
+
                         </div>
+                        <h3 class="text-2xl font-semibold tracking-tight mb-3 text-white" style="">Partners in the Firm
+                        </h3>
+                        <!-- <p class="leading-relaxed font-geist-mono text-sm text-white/60" style="">I start by
+                                understanding your goals,
+                                researching your market, and crafting a strategic foundation for success.</p> -->
+                    </div>
+                </div>
+
+                <!-- Card 2: Lead Enrichment -->
+                <div
+                    class="group relative transition-all duration-500 overflow-hidden border rounded-2xl max-w-2xl hover:bg-white/10 bg-white/5 border-white/10">
+
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neutral-800 border border-neutral-700 flex items-center justify-center mt-6 ml-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <line x1="20" y1="8" x2="20" y2="14"></line>
+                            <line x1="23" y1="11" x2="17" y2="11"></line>
+                        </svg>
                     </div>
 
-                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-heart w-6 h-6 text-emerald-400"
-                                    style="stroke-width:1.5">
-                                    <path
-                                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"
-                                        class=""></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-medium text-white mb-2">Mergers & Corporate Restructuring</h3>
-                                <p class="text-sm text-neutral-400">We guide clients through complex corporate
-                                    transactions, from drafting shareholders' agreements to managing mergers and
-                                    amalgamations. Our expertise ensures legally sound documentation while supporting
-                                    strategic business objectives.</p>
-                            </div>
+                    <!-- Content -->
+                    <div class="pt-6 pr-6 pb-6 pl-6">
+                        <div class="flex mb-4 items-center justify-between">
+                            <div class="flex items-baseline"><span
+                                    class="count-up text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                    style="" data-target="900">0</span><span
+                                    class="text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                    style="">+</span></div>
+
                         </div>
+                        <h3 class="text-2xl font-semibold tracking-tight mb-3 text-white" style="">Total Yrs Exp of
+                            Partners</h3>
+                        <!-- <p class="leading-relaxed font-geist-mono text-sm text-white/60" style="">I start by
+                                understanding your goals,
+                                researching your market, and crafting a strategic foundation for success.</p> -->
+                    </div>
+                </div>
+
+                <!-- Card 3: Lead Enrichment -->
+                <div
+                    class="group relative transition-all duration-500 overflow-hidden border rounded-2xl max-w-2xl hover:bg-white/10 bg-white/5 border-white/10">
+
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neutral-800 border border-neutral-700 flex items-center justify-center mt-6 ml-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <polyline points="17 11 19 13 23 9"></polyline>
+                        </svg>
                     </div>
 
-                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-users w-6 h-6 text-amber-400"
-                                    style="stroke-width:1.5">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" class=""></path>
-                                    <circle cx="9" cy="7" r="4" class=""></circle>
-                                    <path d="m22 21-2-2" class=""></path>
-                                    <circle cx="20" cy="16" r="2" class=""></circle>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-medium text-white mb-2">Intellectual Property & Brand Protection
-                                </h3>
-                                <p class="text-sm text-neutral-400">Our specialists help organizations secure their
-                                    intellectual assets through trademark registration and comprehensive IP
-                                    portfolio management, creating sustainable competitive advantage through protected
-                                    innovation.</p>
-                            </div>
+                    <!-- Content -->
+                    <div class="pt-6 pr-6 pb-6 pl-6">
+                        <div class="flex mb-4 items-center justify-between">
+                            <div class="flex items-baseline"><span
+                                    class="count-up text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                    style="" data-target="30">0</span><span
+                                    class="text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                    style="">+</span></div>
+
                         </div>
+                        <h3 class="text-2xl font-semibold tracking-tight mb-3 text-white" style="">Avg Yrs of
+                            Partners exp</h3>
+                        <!-- <p class="leading-relaxed font-geist-mono text-sm text-white/60" style="">I start by
+                                                understanding your goals,
+                                                researching your market, and crafting a strategic foundation for success.</p> -->
                     </div>
-                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-code-2 w-6 h-6 text-purple-400"
-                                    style="stroke-width:1.5">
-                                    <path d="m18 16 4-4-4-4" class=""></path>
-                                    <path d="m6 8-4 4 4 4" class=""></path>
-                                    <path d="m14.5 4-5 16" class=""></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-medium text-white mb-2">Financial Regulatory Servcies</h3>
-                                <p class="text-sm text-neutral-400">We navigate the complex landscape of financial
-                                    regulations, offering guidance on GST compliance, income tax advisory,
-                                    investor protection fund claims, and securities management to minimize risk while
-                                    optimizing financial outcomes.</p>
-                            </div>
-                        </div>
+                </div>
+
+                <!-- Card 4: Lead Enrichment -->
+                <div
+                    class="group relative transition-all duration-500 overflow-hidden border rounded-2xl max-w-2xl hover:bg-white/10 bg-white/5 border-white/10">
+
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neutral-800 border border-neutral-700 flex items-center justify-center mt-6 ml-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M17 15.2454V22.1169C17 22.393 16.7761 22.617 16.5 22.617C16.4094 22.617 16.3205 22.5923 16.2428 22.5457L12 20L7.75725 22.5457C7.52046 22.6877 7.21333 22.6109 7.07125 22.3742C7.02463 22.2964 7 22.2075 7 22.1169V15.2454C5.17107 13.7793 4 11.5264 4 9C4 4.58172 7.58172 1 12 1C16.4183 1 20 4.58172 20 9C20 11.5264 18.8289 13.7793 17 15.2454ZM9 16.4185V19.4676L12 17.6676L15 19.4676V16.4185C14.0736 16.7935 13.0609 17 12 17C10.9391 17 9.92643 16.7935 9 16.4185ZM12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z">
+                            </path>
+                        </svg>
                     </div>
 
-                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-heart w-6 h-6 text-emerald-400"
-                                    style="stroke-width:1.5">
-                                    <path
-                                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"
-                                        class=""></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-medium text-white mb-2">Consumer Protection & Compliance</h3>
-                                <p class="text-sm text-neutral-400">Our advisors help businesses comply with evolving
-                                    consumer protection regulations, establishing frameworks that build
-                                    consumer trust while meeting regulatory requirements.
-                                </p>
-                            </div>
+                    <!-- Content -->
+                    <div class="pt-6 pr-6 pb-6 pl-6">
+                        <div class="flex mb-4 items-center justify-between">
+                            <div class="flex items-baseline"><span
+                                    class="count-up text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                    style="" data-target="1800">0</span><span
+                                    class="text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                    style="">+</span></div>
+
                         </div>
+                        <h3 class="text-2xl font-semibold tracking-tight mb-3 text-white" style="">Digital Enthusiasts
+                        </h3>
+                        <!-- <p class="leading-relaxed font-geist-mono text-sm text-white/60" style="">I start by
+                                                                understanding your goals,
+                                                                researching your market, and crafting a strategic foundation for success.</p> -->
+                    </div>
+                </div>
+
+                <!-- Card 5: Lead Enrichment -->
+                <div
+                    class="group relative transition-all duration-500 overflow-hidden border rounded-2xl max-w-2xl hover:bg-white/10 bg-white/5 border-white/10">
+
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neutral-800 border border-neutral-700 flex items-center justify-center mt-6 ml-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
                     </div>
 
-                    <div class="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 hover-lift">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-users w-6 h-6 text-amber-400"
-                                    style="stroke-width:1.5">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" class=""></path>
-                                    <circle cx="9" cy="7" r="4" class=""></circle>
-                                    <path d="m22 21-2-2" class=""></path>
-                                    <circle cx="20" cy="16" r="2" class=""></circle>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-medium text-white mb-2">Future Services (Coming Soon)</h3>
-                                <p class="text-sm text-neutral-400">We are constantly expanding our capabilities to meet
-                                    emerging client needs. Our upcoming services include accounting
-                                    services, ESOP process management, sweat equity structures, HR consultancy, SME IPO
-                                    services, SEBI registration
-                                    processes, NBFC establishment, arbitration conciliation, and international business
-                                    setup.</p>
-                            </div>
+                    <!-- Content -->
+                    <div class="pt-6 pr-6 pb-6 pl-6">
+                        <div class="flex mb-4 items-center justify-between">
+                            <div class="flex items-baseline"><span
+                                    class="count-up text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                    style="" data-target="275">0</span><span
+                                    class="text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                    style="">+</span></div>
+
+                        </div>
+                        <h3 class="text-2xl font-semibold tracking-tight mb-3 text-white" style="">Subject Matter
+                            Experts</h3>
+                        <!-- <p class="leading-relaxed font-geist-mono text-sm text-white/60" style="">I start by
+                                                                understanding your goals,
+                                                                researching your market, and crafting a strategic foundation for success.</p> -->
+                    </div>
+                </div>
+
+                <!-- Card 6: Lead Enrichment -->
+                <div
+                    class="group relative transition-all duration-500 overflow-hidden border rounded-2xl max-w-2xl hover:bg-white/10 bg-white/5 border-white/10">
+
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neutral-800 border border-neutral-700 flex items-center justify-center mt-6 ml-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="currentColor">
+                            <path
+                                d="M6.23509 6.45329C4.85101 7.89148 4 9.84636 4 12C4 16.4183 7.58172 20 12 20C13.0808 20 14.1116 19.7857 15.0521 19.3972C15.1671 18.6467 14.9148 17.9266 14.8116 17.6746C14.582 17.115 13.8241 16.1582 12.5589 14.8308C12.2212 14.4758 12.2429 14.2035 12.3636 13.3943L12.3775 13.3029C12.4595 12.7486 12.5971 12.4209 14.4622 12.1248C15.4097 11.9746 15.6589 12.3533 16.0043 12.8777C16.0425 12.9358 16.0807 12.9928 16.1198 13.0499C16.4479 13.5297 16.691 13.6394 17.0582 13.8064C17.2227 13.881 17.428 13.9751 17.7031 14.1314C18.3551 14.504 18.3551 14.9247 18.3551 15.8472V15.9518C18.3551 16.3434 18.3168 16.6872 18.2566 16.9859C19.3478 15.6185 20 13.8854 20 12C20 8.70089 18.003 5.8682 15.1519 4.64482C14.5987 5.01813 13.8398 5.54726 13.575 5.91C13.4396 6.09538 13.2482 7.04166 12.6257 7.11976C12.4626 7.14023 12.2438 7.12589 12.012 7.11097C11.3905 7.07058 10.5402 7.01606 10.268 7.75495C10.0952 8.2232 10.0648 9.49445 10.6239 10.1543C10.7134 10.2597 10.7307 10.4547 10.6699 10.6735C10.59 10.9608 10.4286 11.1356 10.3783 11.1717C10.2819 11.1163 10.0896 10.8931 9.95938 10.7412C9.64554 10.3765 9.25405 9.92233 8.74797 9.78176C8.56395 9.73083 8.36166 9.68867 8.16548 9.64736C7.6164 9.53227 6.99443 9.40134 6.84992 9.09302C6.74442 8.8672 6.74488 8.55621 6.74529 8.22764C6.74529 7.8112 6.74529 7.34029 6.54129 6.88256C6.46246 6.70541 6.35689 6.56446 6.23509 6.45329ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="pt-6 pr-6 pb-6 pl-6">
+                        <div class="flex mb-4 items-center justify-between">
+                            <span
+                                class="count-up text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                style="" data-target="5">0</span>
+
+                        </div>
+                        <h3 class="text-2xl font-semibold tracking-tight mb-3 text-white" style="">Continents of
+                            Operations</h3>
+                        <!-- <p class="leading-relaxed font-geist-mono text-sm text-white/60" style="">I start by
+                                                                understanding your goals,
+                                                                researching your market, and crafting a strategic foundation for success.</p> -->
+                    </div>
+                </div>
+
+                <!-- Card 7: Lead Enrichment -->
+                <div
+                    class="group relative transition-all duration-500 overflow-hidden border rounded-2xl max-w-2xl hover:bg-white/10 bg-white/5 border-white/10">
+
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neutral-800 border border-neutral-700 flex items-center justify-center mt-6 ml-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            fill="currentColor">
+                            <path
+                                d="M20.0833 15.1999L21.2854 15.9212C21.5221 16.0633 21.5989 16.3704 21.4569 16.6072C21.4146 16.6776 21.3557 16.7365 21.2854 16.7787L12.5144 22.0412C12.1977 22.2313 11.8021 22.2313 11.4854 22.0412L2.71451 16.7787C2.47772 16.6366 2.40093 16.3295 2.54301 16.0927C2.58523 16.0223 2.64413 15.9634 2.71451 15.9212L3.9166 15.1999L11.9999 20.0499L20.0833 15.1999ZM20.0833 10.4999L21.2854 11.2212C21.5221 11.3633 21.5989 11.6704 21.4569 11.9072C21.4146 11.9776 21.3557 12.0365 21.2854 12.0787L11.9999 17.6499L2.71451 12.0787C2.47772 11.9366 2.40093 11.6295 2.54301 11.3927C2.58523 11.3223 2.64413 11.2634 2.71451 11.2212L3.9166 10.4999L11.9999 15.3499L20.0833 10.4999ZM12.5144 1.30864L21.2854 6.5712C21.5221 6.71327 21.5989 7.0204 21.4569 7.25719C21.4146 7.32757 21.3557 7.38647 21.2854 7.42869L11.9999 12.9999L2.71451 7.42869C2.47772 7.28662 2.40093 6.97949 2.54301 6.7427C2.58523 6.67232 2.64413 6.61343 2.71451 6.5712L11.4854 1.30864C11.8021 1.11864 12.1977 1.11864 12.5144 1.30864ZM11.9999 3.33233L5.88723 6.99995L11.9999 10.6676L18.1126 6.99995L11.9999 3.33233Z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="pt-6 pr-6 pb-6 pl-6">
+                        <div class="flex mb-4 items-center justify-between">
+                            <span
+                                class="count-up text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                style="" data-target="12">0</span>
+
+                        </div>
+                        <h3 class="text-2xl font-semibold tracking-tight mb-3 text-white" style="">Horizontals</h3>
+                        <!-- <p class="leading-relaxed font-geist-mono text-sm text-white/60" style="">I start by
+                                                                understanding your goals,
+                                                                researching your market, and crafting a strategic foundation for success.</p> -->
+                    </div>
+                </div>
+
+                <!-- Card 8: Lead Enrichment -->
+                <div
+                    class="group relative transition-all duration-500 overflow-hidden border rounded-2xl max-w-2xl hover:bg-white/10 bg-white/5 border-white/10">
+
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neutral-800 border border-neutral-700 flex items-center justify-center mt-6 ml-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.2 7.8l-7.7 7.7-4-4-5.7 5.7"></path>
+                            <path d="M15 7h6v6"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="pt-6 pr-6 pb-6 pl-6">
+                        <div class="flex mb-4 items-center justify-between">
+                            <div class="flex items-baseline"><span
+                                    class="count-up text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                    style="" data-target="100">0</span><span
+                                    class="text-5xl font-semibold tracking-tight font-geist-mono text-emerald-400"
+                                    style="">+</span></div>
+
+                        </div>
+                        <h3 class="text-2xl font-semibold tracking-tight mb-3 text-white" style="">Business Solutions
+                        </h3>
+                        <!-- <p class="leading-relaxed font-geist-mono text-sm text-white/60" style="">I start by
+                                                                understanding your goals,
+                                                                researching your market, and crafting a strategic foundation for success.</p> -->
+                    </div>
+                </div>
+
+                <!-- Card 6: Onboarding -->
+                <!-- <div class="glow-card group relative bg-neutral-900 border border-neutral-800 rounded-xl p-6 flex flex-col h-full">
+                    <div class="absolute top-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" data-icon="lucide:arrow-right" data-width="20" class="iconify text-neutral-600 -rotate-45 iconify--lucide">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path>
+                        </svg>
+                    </div>
+
+                    <div class="w-12 h-12 rounded-lg bg-neutral-800 border border-neutral-700 flex items-center justify-center mb-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" data-icon="lucide:user-plus" data-width="20" class="iconify iconify--lucide">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M19 8v6m3-3h-6"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <h3 class="text-lg font-medium text-white mb-2" style="">Client Onboarding</h3>
+                    <p class="text-sm text-neutral-400 mb-6 flex-grow leading-relaxed" style="">
+                        Triggers on contract sign. Creates drive folders, invites to Slack, provisions software seats,
+                        and sends welcome sequence.
+                    </p>
+
+                    <div class="border-t border-neutral-800 pt-4 mt-auto">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-[10px] font-medium" style="">DocuSign</span>
+                            <span class="px-2 py-1 rounded bg-green-500/10 text-green-400 border border-green-500/20 text-[10px] font-medium" style="">Google Drive</span>
                         </div>
                     </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Social Proof -->
+    <section class="border-y border-white/5 bg-neutral-900/30 backdrop-blur-sm overflow-hidden">
+        <style>
+            @keyframes marquee {
+                from {
+                    transform: translateX(0);
+                }
+
+                to {
+                    transform: translateX(-50%);
+                }
+            }
+
+            .animate-marquee {
+                display: flex;
+                width: max-content;
+                animation: marquee 60s linear infinite;
+            }
+
+            .animate-marquee:hover {
+                animation-play-state: paused;
+            }
+        </style>
+        <div class="animate-marquee py-12">
+            <!-- Group 1 -->
+            <div class="flex gap-32 items-center px-16">
+                <!-- Set 1 -->
+                <div class="text-center">
+                    <span class="fi fi-in" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-us" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-ca" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-gb" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-de" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-sg" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-nz" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-au" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-ae" style="font-size: 60px;"></span>
+                </div>
+                <!-- Set 2 -->
+                <div class="text-center">
+                    <span class="fi fi-in" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-us" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-ca" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-gb" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-de" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-sg" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-nz" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-au" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-ae" style="font-size: 60px;"></span>
+                </div>
+                <!-- Set 3 -->
+                <div class="text-center">
+                    <span class="fi fi-in" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-us" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-ca" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-gb" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-de" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-sg" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-nz" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-au" style="font-size: 60px;"></span>
+                </div>
+                <div class="text-center">
+                    <span class="fi fi-ae" style="font-size: 60px;"></span>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Visual Divider: Workflow Representation -->
+    <section class="py-12 overflow-hidden border rounded-2xl hover:bg-white/10 bg-white/5 border-white/10 text-white">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col items-center">
+            <div class="sm:px-6 lg:px-8 max-w-7xl mr-auto ml-auto pr-4 pl-4">
+                <div class="animate-in text-center">
+                    <h2 class="sm:text-5xl karaoke-container text-4xl font-semibold tracking-tight mt-4"
+                        data-karaoke-wrapped="true" data-karaoke-animated="true">
+                        <span class="karaoke-word">
+                            We pride ourselves on being a full-service management consulting firm with unrivalled
+                            technological prowess.
+                        </span>
+
+                    </h2>
+                    <p class="mx-auto mt-3 max-w-2xl text-sm sm:text-base text-neutral-300 karaoke-container"
+                        data-karaoke-wrapped="true" data-karaoke-animated="true">
+                        <span class="karaoke-word">Our expertise spans across seven major verticals,</span>
+
+                    </p>
+                </div>
+
+                <div class="relative mx-auto mt-12 max-w-4xl">
+                    <div class="animate-in stagger-delay-1 flex items-center justify-center gap-6 sm:gap-10 flex-wrap">
+                        <span
+                            class="inline-flex h-10 w-20 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
+                            Banking
+                        </span>
+                        <span
+                            class="inline-flex h-10 w-20 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
+                            Finance
+                        </span>
+                        <span
+                            class="inline-flex h-10 w-20 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
+                            Insurance
+                        </span>
+                        <span
+                            class="inline-flex h-10 w-40 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
+                            Manufacturing
+                        </span>
+                        <span
+                            class="inline-flex h-10 w-20 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
+                            Retail
+                        </span>
+                        <span
+                            class="inline-flex h-10 w-40 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
+                            Technology
+                        </span>
+                    </div>
+
+                    <div class="animate-in stagger-delay-2 relative mt-6 h-64">
+                        <svg viewBox="0 0 900 360" class="absolute inset-0 w-full h-full" fill="none">
+                            <circle cx="150" cy="30" r="4" fill="#A3E635" filter="url(#glow)" class="">
+                                <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"
+                                    class=""></animate>
+                            </circle>
+                            <circle cx="270" cy="30" r="4" fill="#A3E635" filter="url(#glow)" class="">
+                                <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.2s"
+                                    repeatCount="indefinite" class="">
+                                </animate>
+                            </circle>
+                            <circle cx="390" cy="30" r="4" fill="#A3E635" filter="url(#glow)" class="">
+                                <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.4s"
+                                    repeatCount="indefinite" class="">
+                                </animate>
+                            </circle>
+                            <circle cx="510" cy="30" r="4" fill="#A3E635" filter="url(#glow)" class="">
+                                <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.6s"
+                                    repeatCount="indefinite" class="">
+                                </animate>
+                            </circle>
+                            <circle cx="630" cy="30" r="4" fill="#A3E635" filter="url(#glow)" class="">
+                                <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.8s"
+                                    repeatCount="indefinite" class="">
+                                </animate>
+                            </circle>
+                            <circle cx="750" cy="30" r="4" fill="#A3E635" filter="url(#glow)" class="">
+                                <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1s"
+                                    repeatCount="indefinite" class="">
+                                </animate>
+                            </circle>
+
+                            <path d="M450 300 C 450 200, 300 120, 150 30" stroke="#A3E635" stroke-width="2"
+                                stroke-linecap="round" fill="none" style="stroke-dasharray: 600; stroke-dashoffset: 600"
+                                class="">
+                                <animate attributeName="stroke-dashoffset" values="600;0;600" dur="3s" begin="0s"
+                                    repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+                                    class=""></animate>
+                            </path>
+                            <path d="M450 300 C 450 210, 360 130, 270 30" stroke="#A3E635" stroke-width="2"
+                                stroke-linecap="round" fill="none" style="stroke-dasharray: 520; stroke-dashoffset: 520"
+                                class="">
+                                <animate attributeName="stroke-dashoffset" values="520;0;520" dur="3s" begin="0.2s"
+                                    repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+                                    class=""></animate>
+                            </path>
+                            <path d="M450 300 C 450 150, 420 80, 390 30" stroke="#A3E635" stroke-width="2"
+                                stroke-linecap="round" fill="none" style="stroke-dasharray: 450; stroke-dashoffset: 450"
+                                class="">
+                                <animate attributeName="stroke-dashoffset" values="450;0;450" dur="3s" begin="0.4s"
+                                    repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+                                    class=""></animate>
+                            </path>
+                            <path d="M450 300 C 450 150, 480 80, 510 30" stroke="#A3E635" stroke-width="2"
+                                stroke-linecap="round" fill="none" style="stroke-dasharray: 450; stroke-dashoffset: 450"
+                                class="">
+                                <animate attributeName="stroke-dashoffset" values="450;0;450" dur="3s" begin="0.6s"
+                                    repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+                                    class=""></animate>
+                            </path>
+                            <path d="M450 300 C 450 210, 540 130, 630 30" stroke="#A3E635" stroke-width="2"
+                                stroke-linecap="round" fill="none" style="stroke-dasharray: 520; stroke-dashoffset: 520"
+                                class="">
+                                <animate attributeName="stroke-dashoffset" values="520;0;520" dur="3s" begin="0.8s"
+                                    repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+                                    class=""></animate>
+                            </path>
+                            <path d="M450 300 C 450 200, 600 120, 750 30" stroke="#A3E635" stroke-width="2"
+                                stroke-linecap="round" fill="none" style="stroke-dasharray: 600; stroke-dashoffset: 600"
+                                class="">
+                                <animate attributeName="stroke-dashoffset" values="600;0;600" dur="3s" begin="1s"
+                                    repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+                                    class=""></animate>
+                            </path>
+                        </svg>
+
+                        <div class="absolute bottom-2 left-1/2 -translate-x-1/2">
+                            <img src="./qt=q_95.png" alt="Apiary Consulting" class="h-16 w-auto">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="typewriter-effect cursor-white text-xl font-semibold tracking-tight mt-5 min-h-[1.2em]"
+                data-text="Transform business challenges into opportunities for innovation and sustainable growth.">
+                Transform business challenges into opportunities for innovation and sustainable growth.</div>
+        </div>
+    </section>
+
+    <!-- Pricing / CTA -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-medium text-white tracking-tight mb-6" style="">Our Works</h2>
+            <div>
+                <!-- Carousel Section -->
+                <div class="relative w-full max-w-6xl mx-auto mt-12 group">
+                    <!-- Carousel Container -->
+                    <div id="carousel-scroll-container"
+                        class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide pb-4"
+                        style="scrollbar-width: none; -ms-overflow-style: none;">
+
+                        <!-- Card 1 -->
+                        <div
+                            class="min-w-[340px] md:min-w-[400px] snap-center bg-black border border-white/10 rounded-2xl overflow-hidden flex flex-col hover:border-white/20 transition-colors">
+                            <div class="aspect-[4/3] bg-neutral-900 relative">
+                                <!-- Placeholder for Image -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-neutral-800 to-black flex items-center justify-center text-neutral-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                        <circle cx="9" cy="9" r="2" />
+                                        <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="p-6 text-left flex-1 flex flex-col">
+                                <div class="text-xs font-semibold text-neutral-500 mb-3 uppercase tracking-wider">May 6,
+                                    2025</div>
+                                <h3 class="text-xl font-semibold text-white mb-3 leading-tight">Fuse — Multi-Agent Layer
+                                    (Beta)</h3>
+                                <p class="text-sm text-neutral-400 leading-relaxed">Coordinate multiple AI agents
+                                    seamlessly with our new orchestration layer for complex workflows.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="min-w-[340px] md:min-w-[400px] snap-center bg-black border border-white/10 rounded-2xl overflow-hidden flex flex-col hover:border-white/20 transition-colors">
+                            <div class="aspect-[4/3] bg-neutral-900 relative">
+                                <!-- Placeholder for Image -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-neutral-800 to-black flex items-center justify-center text-neutral-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                        <circle cx="9" cy="9" r="2" />
+                                        <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="p-6 text-left flex-1 flex flex-col">
+                                <div class="text-xs font-semibold text-neutral-500 mb-3 uppercase tracking-wider">Apr
+                                    29, 2025</div>
+                                <h3 class="text-xl font-semibold text-white mb-3 leading-tight">Low-Latency Mode for
+                                    Inference API</h3>
+                                <p class="text-sm text-neutral-400 leading-relaxed">Experience 40% faster response times
+                                    with our optimized inference pipeline for real-time applications.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div
+                            class="min-w-[340px] md:min-w-[400px] snap-center bg-black border border-white/10 rounded-2xl overflow-hidden flex flex-col hover:border-white/20 transition-colors">
+                            <div class="aspect-[4/3] bg-neutral-900 relative">
+                                <!-- Placeholder for Image -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-neutral-800 to-black flex items-center justify-center text-neutral-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="m10 10-6.157 6.162a2 2 0 0 0-.5.833l-1.322 4.36a.5.5 0 0 0 .622.624l4.358-1.323a2 2 0 0 0 .83-.5L14 13.982" />
+                                        <path d="m12.829 7.172 4.359-4.346a1 1 0 1 1 1.414 1.414l-4.353 4.353" />
+                                        <path d="m14.243 5.757 1.414 1.414" />
+                                        <path d="m14 14 1.768 1.768" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="p-6 text-left flex-1 flex flex-col">
+                                <div class="text-xs font-semibold text-neutral-500 mb-3 uppercase tracking-wider">Apr 1,
+                                    2025</div>
+                                <h3 class="text-xl font-semibold text-white mb-3 leading-tight">Code Interpreter — Run
+                                    Python in Chat</h3>
+                                <p class="text-sm text-neutral-400 leading-relaxed">Execute Python code directly in
+                                    conversations with secure sandboxing and instant visualization support.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 (Duplicate for demonstration if needed, or just 3) -->
+                        <div
+                            class="min-w-[340px] md:min-w-[400px] snap-center bg-black border border-white/10 rounded-2xl overflow-hidden flex flex-col hover:border-white/20 transition-colors">
+                            <div class="aspect-[4/3] bg-neutral-900 relative">
+                                <!-- Placeholder for Image -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-neutral-800 to-black flex items-center justify-center text-neutral-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 16v-4" />
+                                        <path d="M12 8h.01" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="p-6 text-left flex-1 flex flex-col">
+                                <div class="text-xs font-semibold text-neutral-500 mb-3 uppercase tracking-wider">Mar
+                                    15, 2025</div>
+                                <h3 class="text-xl font-semibold text-white mb-3 leading-tight">Enterprise SSO
+                                    Integration</h3>
+                                <p class="text-sm text-neutral-400 leading-relaxed">Streamline authentication with SAML
+                                    2.0 and OIDC support for enterprise workspaces.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <button
+                        onclick="document.getElementById('carousel-scroll-container').scrollBy({left: -400, behavior: 'smooth'})"
+                        class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 w-10 h-10 rounded-full bg-neutral-800 border border-neutral-700 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-neutral-700 z-10 disabled:opacity-0 focus:outline-none"
+                        aria-label="Scroll Left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m15 18-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button
+                        onclick="document.getElementById('carousel-scroll-container').scrollBy({left: 400, behavior: 'smooth'})"
+                        class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 w-10 h-10 rounded-full bg-neutral-800 border border-neutral-700 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-neutral-700 z-10 focus:outline-none"
+                        aria-label="Scroll Right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 md:p-12">
+                <div class="flex flex-col md:flex-row gap-6 items-center justify-between">
+                    <div class="text-left">
+                        <div class="text-white text-xl font-medium mb-2" style="">Project Consultation</div>
+                        <div class="text-neutral-500 text-sm" style="">30-minute discovery call to map your workflow.
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-white font-medium text-2xl">$0</div>
+                        <button
+                            class="px-6 py-3 bg-white text-black rounded-lg text-sm font-medium hover:bg-neutral-200 transition-colors"
+                            style="">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full h-px bg-neutral-800 my-8"></div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+                    <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16"
+                            viewBox="0 0 24 24" data-icon="lucide:check" data-width="16"
+                            class="iconify text-white mt-1 iconify--lucide">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M20 6L9 17l-5-5"></path>
+                        </svg>
+                        <span class="text-sm text-neutral-400" style="">Custom Architecture</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16"
+                            viewBox="0 0 24 24" data-icon="lucide:check" data-width="16"
+                            class="iconify text-white mt-1 iconify--lucide">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M20 6L9 17l-5-5"></path>
+                        </svg>
+                        <span class="text-sm text-neutral-400" style="">Full Documentation</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16"
+                            viewBox="0 0 24 24" data-icon="lucide:check" data-width="16"
+                            class="iconify text-white mt-1 iconify--lucide">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M20 6L9 17l-5-5"></path>
+                        </svg>
+                        <span class="text-sm text-neutral-400" style="">30 Days Support</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-12 px-6 bg-black">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 rounded bg-neutral-800 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="12" height="12"
+                        viewBox="0 0 24 24" data-icon="lucide:workflow" data-width="12"
+                        class="iconify text-white iconify--lucide">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                            <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
+                            <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                        </g>
+                    </svg>
+                </div>
+                <span class="text-xs text-neutral-500 font-medium tracking-tight" style="">APIARY © 2026</span>
+            </div>
+
+            <div class="flex gap-6 text-xs font-medium text-neutral-500">
+                <a href="#" class="hover:text-white transition-colors" style="">Twitter</a>
+                <a href="#" class="hover:text-white transition-colors" style="">LinkedIn</a>
+                <a href="#" class="hover:text-white transition-colors" style="">GitHub</a>
+                <a href="#" class="hover:text-white transition-colors" style="">Email</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.count-up');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const duration = 2000; // 2 seconds
+                        const startTime = performance.now();
+
+                        const updateCount = (currentTime) => {
+                            const elapsed = currentTime - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+
+                            // Easing function for smooth animation
+                            const easeOutQuad = progress * (2 - progress);
+
+                            const currentCount = Math.floor(easeOutQuad * target);
+                            counter.innerText = currentCount;
+
+                            if (progress < 1) {
+                                requestAnimationFrame(updateCount);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        };
+
+                        requestAnimationFrame(updateCount);
+                        observer.unobserve(counter);
+                    }
+                });
+            }, {
+                threshold: 0.5
+            });
+
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+
+            // Typewriter Effect
+            const typewriters = document.querySelectorAll('.typewriter-effect');
+
+            const typeWriterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        const text = element.getAttribute('data-text');
+                        element.innerHTML = '<span class="text-content"></span><span class="cursor"></span>';
+                        const textSpan = element.querySelector('.text-content');
+
+                        let i = 0;
+                        function type() {
+                            if (i < text.length) {
+                                textSpan.innerText += text.charAt(i);
+                                i++;
+                                setTimeout(type, 30); // Faster typing speed
+                            }
+                        }
+
+                        type();
+                        observer.unobserve(element);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            typewriters.forEach(el => typeWriterObserver.observe(el));
+        });
+    </script>
 </body>
 
 </html>
